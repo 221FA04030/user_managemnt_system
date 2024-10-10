@@ -21,7 +21,7 @@ app.set('view engine', 'ejs')
 
 //load assests
 app.use('/CSS',express.static(path.resolve(__dirname, 'assets/CSS')))
-app.use('/img',express.static(path.resolve(__dirname, 'assets/img')))
+
 app.use('/js', express.static(path.resolve(__dirname, 'assets/js')))
 //laoding router
 app.use('/',require('./server/route/router'))
